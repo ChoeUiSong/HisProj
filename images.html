@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="image.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1 style="font-size: 40px;">Images for the project</h1>
+        <p>Hirohito And Pearl Harbor</p>
+        
+    </header>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active"  href="images.html">Images</a>
+      </div>
+      
+    <h1>Images of Hirohito</h1>
+    <img src="image/Hirohito.jpg" alt="hirohito" class="img1">
+    <img src="image/Hirohito2.jpg" alt="hirohito" class="img2">
+    <img src="image/Hirohito3.jpg" alt="hirohito" class="img3">
+    <img src="image/Hirohito4.jpg" alt="hirohito" class="img4">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 class="ph">Images of Pearl Harbor</h1>
+    <img src="image/PH1.jpg" alt="Pearl Harbor" class="pimg1">
+    <img src="image/PH2.jpg" alt="Pearl Harbor" class="pimg2">
+    <img src="image/PH3.jpg" alt="Pearl Harbor" class="pimg3">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script>
+        $(document).ready(function () {
+            $('body').css({
+                fontSize: '17px',
+                background: '#f4f4f4',
+                lineHeight: '1.5em',
+            })
+            $('header').css({
+                background: '#333',
+                color: '#fff',
+                padding: '20px',
+                textAlign: 'center',
+                borderBottom: '4px #000 solid',
+                marginBottom: '10px'
+            });
+            
+            $('.header').slideUp(0).slideDown(2000);
+            $('#container').slideUp(0).slideDown(1000);
+        });
+        
+    </script>
+</body>
+</html>
